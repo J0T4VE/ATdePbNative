@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 
 export default function Login({ route }) {
-  const { setIsAutenticado } = route.params;  // Usando o parâmetro passado por App.js
+  const { setIsAutenticado } = route.params;  
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
 
   const handleLogin = () => {
     if (email === "usuario@teste.com" && senha === "123456") {
-      setIsAutenticado(true);  // Agora chamando a função corretamente
+      setIsAutenticado(true);  
     } else {
       setErro("E-mail ou senha inválidos.");
     }

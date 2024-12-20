@@ -17,11 +17,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerShown: true, // Cabeçalho visível
+          headerShown: true, 
           headerStyle: {
             backgroundColor: "#333",
           },
-          headerTintColor: "#fff", // Cor do texto do cabeçalho
+          headerTintColor: "#fff", 
           headerTitleAlign: "center",
         }}
       >
@@ -37,10 +37,10 @@ export default function App() {
         ) : (
           <>
             <Stack.Screen
-              name="Home" // Mudamos o nome de Filmes para Home
+              name="Home"
               component={Filmes}
               options={{
-                title: "Home", // Tela inicial
+                title: "Home", 
                 headerRight: () => (
                   <Button
                     title="Sair"
@@ -51,7 +51,7 @@ export default function App() {
               }}
             />
             <Stack.Screen
-              name="Filmes" // Esta tela é agora o Dashboard de Avaliações
+              name="Filmes" 
               component={Dashboard}
               options={{
                 title: "Dashboard de Avaliações",
